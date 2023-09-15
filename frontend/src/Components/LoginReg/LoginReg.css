@@ -125,3 +125,15 @@
     background: whitesmoke;
     color: rgb(165, 165, 165);
 }
+
+.drop
+{
+    width: 480px;
+    margin-left: 35px;
+    height: 5vh;
+    font-size:19px ;
+    /* background:transparent; */
+    /* border: none; */
+    outline: none;
+   
+}
