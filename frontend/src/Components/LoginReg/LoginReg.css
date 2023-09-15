@@ -6,6 +6,7 @@
     margin-top: 200px;
     background: grey;
     padding-bottom: 30px;
+    width: 600px;
 }
 
 .header
@@ -82,3 +83,41 @@
     font-size: 18px;
 }
 
+
+.forgot-password
+{
+    color: lightblue;
+    cursor: pointer;
+
+
+}
+
+
+.submit-container
+{
+    display: flex;
+    gap:30px;
+    margin: 60px auto;
+}
+
+.submit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color:white;
+    background:lightblue;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.gray
+{
+    background: whitesmoke;
+    color: rgb(165, 165, 165);
+}
