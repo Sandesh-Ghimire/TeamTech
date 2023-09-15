@@ -35,10 +35,13 @@ const [selects,setSelects]=useState();
             
           </div>
           
-          <select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
-<option>Be a Lender</option>
-<option>User</option>
-      </select>
+          {
+            action==='Sign Up'&&
+            (<select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
+            <option>Be a Lender</option>
+            <option>User</option>
+                  </select>)
+          }
         
           
         </div>
@@ -48,6 +51,9 @@ const [selects,setSelects]=useState();
         <div className="submit-container">
           <div className={action==="Login"?"submit gray" :"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
           <div className={action==="Sign Up"? "submit gray": "submit" } onClick={()=>{setAction("Login")}}>Login</div>
+
+          
+
 
         </div>
       </div>
