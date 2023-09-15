@@ -26,9 +26,11 @@ const notFound = require('./error-handler/notfound.js')
 
 //My Routes
 const authRoutes = require('./routes/auth')
+const spaceRoutes = require('./routes/space')
 
 
 app.use('/parkspace',authRoutes)
+app.use('/parkspace',spaceRoutes)
 
 
 app.use(notFound)
