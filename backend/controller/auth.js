@@ -31,6 +31,7 @@ const signin = async (req,res) => {
     const token = jwt.sign({_id:user._id},process.env.SECRET)
     //put token in cookie
     res.cookie("token",token,{expire:new Date() +9999})
+    console.log("token:",token)
 
     const {_id,username,role} = user
     return res.json({
@@ -92,7 +93,7 @@ const isAuthenticated = (req,res,next) => {
 }
 
 const isAdmin = (req,res,next) => {
-    if(req.profile.role !== 0){
+    if(req.profile.role === 2){
         return res.status(403).json({
             err:"You arenot Admin. ACCESS DENIED"
         })
