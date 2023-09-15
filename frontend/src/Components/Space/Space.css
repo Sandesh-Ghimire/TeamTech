@@ -1,7 +1,5 @@
-body
-{
-    background-image: url('../Assets/backcar.jpg');
-}
+
+
 .container
 {
 
@@ -59,7 +57,7 @@ body
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
+    width: 530px;
     height: 60px;
     background: white;
     border-radius: 6px;
@@ -74,29 +72,12 @@ body
 .input input
 {
     height: 50px;
-    width: 300px;
+    width: 400px;
     background:transparent;
     border: none;
     outline: none;
     color: black;
     font-size: 19px;
-
-}
-
-.forgot-password
-{
-    padding-left: 62px;
-    margin-top: 20px;
-    color: black;
-    font-size: 18px;
-}
-
-
-.forgot-password
-{
-    color: green;
-    cursor: pointer;
-
 
 }
 
@@ -117,7 +98,6 @@ body
     height: 59px;
     color:white;
     background:blue;
-  
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
@@ -127,28 +107,6 @@ body
 
 .gray
 {
-    background:whitesmoke;
+    background: whitesmoke;
     color: rgb(165, 165, 165);
-}
-
-.drop
-{
-    width: 480px;
-    margin-left: 35px;
-    height: 5vh;
-    font-size:19px ;
-    /* background:transparent; */
-    /* border: none; */
-    outline: none;
-   
-}
-
-.social
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 20px;
-    
 }
