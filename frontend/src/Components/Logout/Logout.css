@@ -1,0 +1,31 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    right: 0;
+    margin-left: auto;
+    background: black;
+    justify-content: space-around;
+    padding: 10px;
+}
+.width{
+    flex: 0.9;
+}
+.btn1,.btn2{
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2{
+    background: #d63031;
+    color: white;
+}
+.btn1{
+    background:#1dd1a1;
+    color: white;
+}
+.style{
+    text-decoration: none;
+    color:white
+}

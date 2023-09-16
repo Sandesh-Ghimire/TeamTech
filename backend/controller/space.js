@@ -27,14 +27,15 @@ const createSpace = (req,res) => {
 
         //restrictions on field
         console.log(fields)
-        const {location,two_wheeler,four_wheeler,EV,user} = fields
+        const {location,two_wheeler,four_wheeler,EV,user,interval} = fields
 
         const newField = {
             location:location[0],
             two_wheeler:Number(two_wheeler[0]),
             four_wheeler:Number(four_wheeler[0]),
             EV:Number(EV[0]),
-            user:user[0]
+            user:user[0],
+            interval:interval[0]
         }
 
         if(!location || !two_wheeler || !four_wheeler || !EV || !user){

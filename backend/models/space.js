@@ -21,6 +21,10 @@ const spaceSchema = new mongoose.Schema({
     two_wheeler:{
         type:Number,
         required:[true,"Provide the size for 2 wheeler"]
+    },
+    interval:{
+        type:String,
+        enum:["weekly","weekend"]
     }
 })
 

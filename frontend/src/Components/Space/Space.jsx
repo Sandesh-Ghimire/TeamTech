@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './Space.css'
 import GoogleMapReact from 'google-map-react';
+import Logout from '../Logout/Logout';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -17,8 +18,7 @@ export const Space = () => {
 
 
     <div>
-     
-     
+      <Logout/>
       <div className="container">
 
         <div className="header">
