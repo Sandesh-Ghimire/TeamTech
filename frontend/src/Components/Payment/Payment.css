@@ -1,0 +1,21 @@
+
+.container
+{   
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 30px;
+    background: #f2f2f2;
+    padding-bottom: 10px;
+    width: 550px;
+    border: 2px;
+    border-radius: 50px;
+    height: 300px;
+}
+
+.ads
+{
+    color: green;
+    padding-left: 35px;
+    margin-left: 40px;
+}
