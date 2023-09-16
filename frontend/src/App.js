@@ -6,20 +6,17 @@ import { User } from './Components/User/User';
 
 
 
-
+// 
 
 
 function App() {
   return (
     <div>
-      <LoginReg/>
-      <Space/>
-<User/>
-      {/* <Location/> */}
-{/* <DraggableMarker/> */}
-
+<LoginReg/>
     </div>
-  );
+
+
+);
 }
 
 export default App;
