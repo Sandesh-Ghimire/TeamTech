@@ -1,21 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react' //importing necessary libraries and dependency
 import './LoginReg.css'
-
-import user_icon from "../Assets/email.png"
+import user_icon from "../Assets/email.png" //importing images
 import email_icon from "../Assets/person.png"
 import password_icon from "../Assets/password.png"
-
-import ReactDOM from 'react-dom'
 import { SocialIcon } from 'react-social-icons'
 
 export const LoginReg = () => {
 
-const [action,setAction] = useState("Sign Up");
+const [action,setAction] = useState("Sign Up"); 
 const [selects,setSelects]=useState();
   return (
     <div>
-      {/* <h1>{select}</h1> */}
      
+     {/* form for Login and signup */}
       <div className="container">
 
         <div className="header">
@@ -49,7 +46,7 @@ const [selects,setSelects]=useState();
         
           
         </div>
-       
+      
         
         {action==="Sign Up"? <div></div>:  <div className="forgot-password">Forget Password? <span>click here</span></div>}
        
@@ -59,12 +56,11 @@ const [selects,setSelects]=useState();
           
      
         </div>
-        <div className='social'>
+        {/* creating social buttons */}
+        <div className='social'>  
         <SocialIcon url="www.reddit.com" />
-
-<SocialIcon url="www.facebook.com" />
-
-<SocialIcon url="www.github.com" />
+        <SocialIcon url="www.facebook.com" />
+        <SocialIcon url="www.github.com" />
         </div>
        
       </div>

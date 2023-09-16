@@ -5,7 +5,7 @@ import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export const Space = () => {
-
+  const [selects,setSelects]=useState();
     const defaultProps = {
         center: {
           lat: 10.99835602,
@@ -45,19 +45,27 @@ export const Space = () => {
          
           <div className="input">
             <img src="" alt="" />
-            <input type="Number"  placeholder='Numbers of 4 wheelers'/>
+            <input type="Number"  placeholder='Slots for 4 wheelers'/>
             
           </div> 
           <div className="input">
             <img src="" alt="" />
-            <input type="Number"  placeholder='Numbers of 2 wheelers'/>
+            <input type="Number"  placeholder='Slots for 2 wheelers'/>
             
           </div> 
           <div className="input">
             <img src="" alt="" />
             <input type="Number"  placeholder='Slots for EV'/>
             
+            
           </div> 
+        
+          <div className='usr'>
+          <select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
+            <option>Be a renter for a week</option>
+            <option>Be a renter only on weekends</option>
+                  </select>
+          </div>
           <div className="submit-container">
           <div className={"submit"} >Submit</div>
           

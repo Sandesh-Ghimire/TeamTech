@@ -1,9 +1,5 @@
-/* style for login and signup page*/
+/* style fro Normal users*/
 
-body
-{
-    background-image: url('../Assets/backcar.jpg');
-}
 .container
 {   display: flex;
     flex-direction: column;
@@ -30,8 +26,7 @@ body
 {
     color:black ;
     font-size: 48px;
-    font-weight: 500;
-    
+    font-weight: 500;  
 }
 
 .underline
@@ -40,7 +35,6 @@ body
     height:6px;
     background: black;
     border-radius: 9px;
-
 }
 
 .inputs
@@ -56,7 +50,7 @@ body
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
+    width: 530px;
     height: 60px;
     background: white;
     border-radius: 6px;
@@ -69,8 +63,9 @@ body
 
 .input input
 {
+    padding-left: 10px;
     height: 50px;
-    width: 300px;
+    width: 400px;
     background:transparent;
     border: none;
     outline: none;
@@ -78,20 +73,6 @@ body
     font-size: 19px;
 }
 
-.forgot-password
-{
-    padding-left: 62px;
-    margin-top: 20px;
-    color: black;
-    font-size: 18px;
-}
-
-
-.forgot-password
-{
-    color: green;
-    cursor: pointer;
-}
 
 .submit-container
 {
@@ -117,24 +98,32 @@ body
 
 .gray
 {
-    background:whitesmoke;
+    background: whitesmoke;
     color: rgb(165, 165, 165);
 }
-
-.drop
+/* css for users */
+.usr
 {
-    width: 480px;
-    margin-left: 35px;
-    height: 5vh;
-    font-size:19px ;
-    outline: none;   
+    margin-top: 30px;
 }
 
-.social
+.ava
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 20px; 
+    padding-left: 40px;
+}
+
+.inputh
+{
+    padding-left: 35px;
+}
+.inputh input
+{
+    padding-left: 35px;
+    width: 435px;
+    height: 30px;
+}
+ 
+.para
+{
+    padding-left: 35px;
 }
