@@ -1,9 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './User.css'
 import GoogleMapReact from 'google-map-react';
-
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
 export const User = () => {
   const [selects,setSelects]=useState();
     const defaultProps = {
@@ -14,20 +12,13 @@ export const User = () => {
         zoom: 11
       };
   return (
-
-
     <div>
-     
-     
       <div className="container">
-
         <div className="header">
           <div className="text">Available Space</div>
           <div className="underline"></div>
         </div>
-          
         <div>
-       
         <div style={{ height: '100vh', width: '550px' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
@@ -42,38 +33,25 @@ export const User = () => {
       </GoogleMapReact>
     </div>
     </div>
-    <div className="input">
-           
-         <input type="Text"  placeholder='Area'/>
-            
-          </div> 
+    <div className="input">   
+         <input type="Text"  placeholder='Area'/>  
+    </div> 
     <div className='usr'>
     <select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
     <option className='op'>Two wheeler</option>
             <option className='op'>Four wheeler</option>
-           
             <option>EV</option>
-                  </select>
+    </select>
     </div>
-    
-    
-  
     <p className='para'>Estimated hours:</p>
           <div className='inputh'>
-          
-          
           <input type="Number"  placeholder='Hours'/>
-          
           </div>
           <h4 className='ava'>Available slots:</h4>
-      
           <div className="submit-container">
           <div className={"submit"} >Book Now</div>
-          
-      </div> 
-        </div>
-        
+          </div> 
+          </div> 
       </div>
-   
   )
 }
