@@ -1,25 +1,25 @@
 import React, { useState,useEffect } from 'react'
 import './Space.css'
-import GoogleMapReact from 'google-map-react';
 import Logout from '../Logout/Logout';
+import Map from "../Map/Map";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export const Space = () => {
   const [selects,setSelects]=useState();
-    const defaultProps = {
-        center: {
-          lat: 10.99835602,
-          lng: 77.01502627
-        },
-        zoom: 11
-      };
+    // const defaultProps = {
+    //     center: {
+    //       lat: 10.99835602,
+    //       lng: 77.01502627
+    //     },
+    //     zoom: 11
+    //   };
   return (
 
 
     <div>
       <Logout/>
-      <div className="container">
+      <div className="container2">
 
         <div className="header">
           <div className="text">Space</div>
@@ -27,8 +27,8 @@ export const Space = () => {
         </div>
           
         <div>
-       
-        <div style={{ height: '100vh', width: '550px' }}>
+       <Map/>
+        {/* <div style={{ height: '100vh', width: '550px' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
@@ -40,7 +40,7 @@ export const Space = () => {
           text="My Marker"
         />
       </GoogleMapReact>
-    </div>
+    </div> */}
     </div>
          
           <div className="input">

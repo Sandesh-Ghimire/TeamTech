@@ -1,24 +1,26 @@
 import React, { useState,useEffect } from 'react'
 import './User.css'
-import GoogleMapReact from 'google-map-react';
+// import GoogleMapReact from 'google-map-react';
+import Map from "../Map/Map";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export const User = () => {
   const [selects,setSelects]=useState();
-    const defaultProps = {
-        center: {
-          lat: 10.99835602,
-          lng: 77.01502627
-        },
-        zoom: 11
-      };
+    // const defaultProps = {
+    //     center: {
+    //       lat: 10.99835602,
+    //       lng: 77.01502627
+    //     },
+    //     zoom: 11
+    //   };
   return (
     <div>
-      <div className="container">
+      <div className="container3">
         <div className="header">
           <div className="text">Available Space</div>
           <div className="underline"></div>
         </div>
-        <div>
+        <Map/>
+        {/* <div>
         <div style={{ height: '100vh', width: '550px' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
@@ -32,7 +34,7 @@ export const User = () => {
         />
       </GoogleMapReact>
     </div>
-    </div>
+    </div> */}
     <div className="input">   
          <input type="Text"  placeholder='Area'/>  
     </div> 
