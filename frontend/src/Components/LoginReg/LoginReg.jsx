@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react' //importing necessary libraries and dependency
 import './LoginReg.css'
-
-import user_icon from "../Assets/email.png"
 import email_icon from "../Assets/person.png"
 import password_icon from "../Assets/password.png"
+
 import { signup,signin,authenticate,isAuthenticated } from '../../auth'
 import {Link,useNavigate} from "react-router-dom"
 
 import { SocialIcon } from 'react-social-icons'
 
 export const LoginReg = () => {
+
 
 let navigate = useNavigate()
 const {user} = isAuthenticated()//** */
@@ -110,9 +110,11 @@ const errorMessage = () => {
   )
 }
 
+
   return (
     <div>
      
+     {/* form for Login and signup */}
       <div className="container">
 
         <div className="header">
@@ -132,6 +134,7 @@ const errorMessage = () => {
           
           
         </div>
+
        
         <div className="submit-container">
           <div className={"submit"} onClick={onSignIn}>Login</div>
@@ -142,12 +145,11 @@ const errorMessage = () => {
           
 
         </div>
-        <div className='social'>
+        {/* creating social buttons */}
+        <div className='social'>  
         <SocialIcon url="www.reddit.com" />
-
-<SocialIcon url="www.facebook.com" />
-
-<SocialIcon url="www.github.com" />
+        <SocialIcon url="www.facebook.com" />
+        <SocialIcon url="www.github.com" />
         </div>
        
       </div>
