@@ -118,7 +118,7 @@ const errorMessage = () => {
       <div className="container">
 
         <div className="header">
-          <div className="text">Login</div>
+          <div className="text">PARKspace</div>
           <div className="underline"></div>
         </div>
         <div className="inputs">
