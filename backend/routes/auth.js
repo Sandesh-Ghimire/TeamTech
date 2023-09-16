@@ -2,7 +2,6 @@ const express = require('express')
 const authRoutes = express.Router()
 const { check } = require('express-validator');
 
-
 const {signin,signup,signout,isSignedIn} = require('./../controller/auth')
 
 authRoutes.post('/signin',
@@ -15,6 +14,5 @@ authRoutes.post('/signup',
     check('password',"Password should be 8 charactrs long").isLength({min:8})
     ,signup)
 authRoutes.get('/signout',signout)
-
 
 module.exports = authRoutes;

@@ -27,12 +27,8 @@ const connectDB = require('./connect')
 const errorHandler = require('./error-handler/error.js')
 const notFound = require('./error-handler/notfound.js')
 
-
 //Middlewares
 // app.use(bodyParser.json())
-
-
-
 
 
 //My Routes
@@ -40,11 +36,9 @@ const authRoutes = require('./routes/auth')
 const spaceRoutes = require('./routes/space')
 const reserveRoutes = require('./routes/reserve')
 
-
 app.use('/parkspace',authRoutes)
 app.use('/parkspace',spaceRoutes)
 app.use('/parkspace',reserveRoutes)
-
 
 app.use(notFound)
 app.use(errorHandler)
