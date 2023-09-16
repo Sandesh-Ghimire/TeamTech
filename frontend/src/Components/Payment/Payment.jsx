@@ -1,5 +1,6 @@
 import React, { useState } from 'react' //importing necessary libraries and dependency
 import './Payment.css'
+import qr from './qr.png'
 
 export const Payment = () => {
 
@@ -12,7 +13,7 @@ export const Payment = () => {
     
     <div className='ads'>
       <h2>Your Favorite Payment System</h2>
-      <img src=".././Assets/qr.png"/> 
+     <img className='qr' src={qr} alt="" />
     </div>
 
    

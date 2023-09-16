@@ -16,6 +16,14 @@
 .ads
 {
     color: green;
-    padding-left: 35px;
-    margin-left: 40px;
+    padding-left: 45px;
+    margin-left: 60px;
+}
+
+.qr
+{
+    padding-left: 90px;
+ 
+    border-radius: 10px;
+    height: 200px;
 }

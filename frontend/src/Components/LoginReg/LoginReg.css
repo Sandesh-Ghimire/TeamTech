@@ -13,8 +13,10 @@ body
     background: #f2f2f2;
     padding-bottom: 10px;
     width: 550px;
+    height: 650px;
     border: 2px;
     border-radius: 50px;
+    
 }
 
 .header
@@ -148,6 +150,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
     gap: 30px;
     padding-bottom: 20px;
     
