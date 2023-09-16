@@ -14,7 +14,6 @@ exports.getReservationById = async (req,res,next,id) => {
 
 exports.createReservation = async (req,res) => {
     req.body.reservation.user = req.profile;
-    console.log("reservation ---",req.body.reservation)
     const reservation = await Reserve.create(req.body.reservation)
     
     return res.json(reservation)
