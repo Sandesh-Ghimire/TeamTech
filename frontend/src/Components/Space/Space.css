@@ -110,3 +110,13 @@
     background: whitesmoke;
     color: rgb(165, 165, 165);
 }
+/* css for users */
+.usr
+{
+    margin-top: 30px;
+}
+
+.ava
+{
+    padding-left: 40px;
+}

@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import './LoginReg.css'
-
 import user_icon from "../Assets/email.png"
 import email_icon from "../Assets/person.png"
 import password_icon from "../Assets/password.png"
-
-import ReactDOM from 'react-dom'
 import { SocialIcon } from 'react-social-icons'
 
 export const LoginReg = () => {
@@ -49,7 +46,7 @@ const [selects,setSelects]=useState();
         
           
         </div>
-       
+      
         
         {action==="Sign Up"? <div></div>:  <div className="forgot-password">Forget Password? <span>click here</span></div>}
        

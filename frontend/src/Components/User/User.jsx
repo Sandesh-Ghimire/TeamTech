@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from 'react'
-import './Space.css'
+import '../Space/Space.css'
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-export const Space = () => {
+export const User = () => {
   const [selects,setSelects]=useState();
     const defaultProps = {
         center: {
@@ -22,7 +22,7 @@ export const Space = () => {
       <div className="container">
 
         <div className="header">
-          <div className="text">Space</div>
+          <div className="text">Available Space</div>
           <div className="underline"></div>
         </div>
           
@@ -42,32 +42,34 @@ export const Space = () => {
       </GoogleMapReact>
     </div>
     </div>
-         
-          <div className="input">
-            <img src="" alt="" />
-            <input type="Number"  placeholder='Slots for 4 wheelers'/>
+    <div className="input">
+           
+         <input type="Text"  placeholder='Area'/>
             
           </div> 
-          <div className="input">
-            <img src="" alt="" />
-            <input type="Number"  placeholder='Slots for 2 wheelers'/>
-            
-          </div> 
-          <div className="input">
-            <img src="" alt="" />
-            <input type="Number"  placeholder='Slots for EV'/>
-            
-            
-          </div> 
+    <div className='usr'>
+    <select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
+    <option className='op'>Two wheeler</option>
+            <option className='op'>Four wheeler</option>
+           
+            <option>EV</option>
+                  </select>
+    </div>
+    
+    
         
           <div className='usr'>
           <select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
-            <option>Be a renter for a week</option>
-            <option>Be a renter only on weekends</option>
+            <option>Book for a day</option>
+            <option>Book for an hours</option>
+            <option>Book for weekends</option>
+            
                   </select>
+                 
           </div>
+          <h4 className='ava'>Available slots:</h4>
           <div className="submit-container">
-          <div className={"submit"} >Submit</div>
+          <div className={"submit"} >Book Now</div>
           
       </div> 
         </div>
