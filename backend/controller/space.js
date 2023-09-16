@@ -90,7 +90,21 @@ const updateParking = async (req,res,next) => {
     let two_wheeler_no = req.body.reservation.two_wheeler
 
     console.log(req.body.reservation)
-    console.log("update req")
+
+    const space_id = req.body.reservation.location
+    const parkingSpace = await Space.findById(space_id)
+
+    parkingSpace.EV = parkingSpace.EV - EV_no
+    parkingSpace.four_wheeler = parkingSpace.four_wheeler - four_wheeler_no
+    parkingSpace.two_wheeler = parkingSpace.two_wheeler - two_wheeler_no
+
+    if (parkingSpace.EV < 0 || parkingSpace.four_wheeler < 0 || parkingSpace.two_wheeler < 0) {
+        return res.json({
+            err:"Parking limit exceeded."
+        })
+    }
+
+    await parkingSpace.save()
 
     next()
 }
