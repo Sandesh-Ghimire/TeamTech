@@ -71,6 +71,7 @@
 
 .input input
 {
+    padding-left: 10px;
     height: 50px;
     width: 400px;
     background:transparent;
@@ -121,6 +122,18 @@
     padding-left: 40px;
 }
 
-
-
+.inputh
+{
+    padding-left: 35px;
+}
+.inputh input
+{
+    padding-left: 35px;
+    width: 435px;
+    height: 30px;
+}
  
+.para
+{
+    padding-left: 35px;
+}

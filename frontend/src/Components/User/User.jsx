@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import '../Space/Space.css'
+import './User.css'
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -57,17 +57,16 @@ export const User = () => {
     </div>
     
     
-        
-          <div className='usr'>
-          <select value={selects} onChange={e=>setSelects(e.target.value)} className='drop'>
-            <option>Book for a day</option>
-            <option>Book for an hours</option>
-            <option>Book for weekends</option>
-            
-                  </select>
-                 
+  
+    <p className='para'>Estimated hours:</p>
+          <div className='inputh'>
+          
+          
+          <input type="Number"  placeholder='Hours'/>
+          
           </div>
           <h4 className='ava'>Available slots:</h4>
+      
           <div className="submit-container">
           <div className={"submit"} >Book Now</div>
           
