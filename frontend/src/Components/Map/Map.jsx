@@ -4,18 +4,23 @@ import Leaflet from "leaflet"
 // import "./../Space/map.css"
 import "leaflet/dist/leaflet.css" 
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet"
-import markerIcon from "./../Assets/images/marker-icon.png"
-import email from "./../Assets/email.png"
-import markerShadow from "./../Assets/images/marker-shadow.png"
-import markerRetina from "./../Assets/images/marker-icon-2x.png"
+// import markerIcon from "./../Assets/images/marker-icon.png"
+// import email from "./../Assets/email.png"
+// import markerShadow from "./../Assets/images/marker-shadow.png"
+// import markerRetina from "./../Assets/images/marker-icon-2x.png"
+
+// import pin from "./pin.png"
 // import markerIcon from "leaflet/dist/images/marker-icon.png"
 // import markerShadow from "leaflet/dist/images/marker-shadow.png"
 // import markerRetina from "leaflet/dist/images/marker-icon-2x.png"
+import L from 'leaflet';
+
+delete L.Icon.Default.prototype._getIconUrl;
 
 Leaflet.Icon.Default.mergeOptions({
-    iconRetinaUrl: email,
-    iconUrl: markerIcon,
-    shadowUrl: markerShadow
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
 const MapComponent = () => {
@@ -123,3 +128,4 @@ const MarkerContent = (props) => {
 }
 
 export default MapComponent;
+
