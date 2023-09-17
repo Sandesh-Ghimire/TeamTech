@@ -8,11 +8,12 @@ body
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 17px;
     /* margin-bottom: 0px; */
     background: #f2f2f2;
     padding-bottom: 10px;
     width: 550px;
+    height: 610px;
     border: 2px;
     border-radius: 50px;
 }
@@ -105,7 +106,7 @@ body
 {
     display: flex;
     gap:30px;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .submit
@@ -117,7 +118,7 @@ body
     height: 59px;
     color:white;
     background:blue;
-  
+  margin-top: 20px;
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
@@ -145,6 +146,7 @@ body
 
 .social
 {
+    
     display: flex;
     justify-content: center;
     align-items: center;

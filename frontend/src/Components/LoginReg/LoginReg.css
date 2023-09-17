@@ -2,7 +2,7 @@ body
 {
     background-image: url('../Assets/backcar.jpg');
 }
-.container
+.container7
 {
 
     display: flex;
@@ -105,12 +105,13 @@ body
 
 .submit-container
 {
+
     display: flex;
     gap:30px;
-    margin: 40px auto;
+    /* margin: 40px auto; */
 }
 
-.submit
+.submitl
 {
     display: flex;
     justify-content: center;
@@ -119,7 +120,7 @@ body
     height: 59px;
     color:white;
     background:blue;
-  
+  margin-top: 50px;
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
@@ -145,8 +146,9 @@ body
    
 }
 
-.social
+.sociall
 {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;

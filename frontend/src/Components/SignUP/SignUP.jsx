@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './SignUP.css'
 
 import user_icon from "../Assets/email.png"
+
 import email_icon from "../Assets/person.png"
 import password_icon from "../Assets/password.png"
 import { signup,signin,authenticate,isAuthenticated } from '../../auth'
@@ -70,7 +71,7 @@ const SignUP = () => {
     <div className="container">
 
       <div className="header">
-        <div className="text">SignUP</div>
+        <div className="text">PARKspace</div>
         <div className="underline"></div>
       </div>
       <div className="inputs">

@@ -115,7 +115,7 @@ const errorMessage = () => {
     <div>
      
      {/* form for Login and signup */}
-      <div className="container">
+      <div className="container7">
 
         <div className="header">
           <div className="text">PARKspace</div>
@@ -137,7 +137,7 @@ const errorMessage = () => {
 
        
         <div className="submit-container">
-          <div className={"submit"} onClick={onSignIn}>Login</div>
+          <div className={"submitl"} onClick={onSignIn}>Login</div>
 
           {/* {success && successMessage()}
         {error && errorMessage()} */}
@@ -146,7 +146,7 @@ const errorMessage = () => {
 
         </div>
         {/* creating social buttons */}
-        <div className='social'>  
+        <div className='sociall'>  
         <SocialIcon url="www.reddit.com" />
         <SocialIcon url="www.facebook.com" />
         <SocialIcon url="www.github.com" />
